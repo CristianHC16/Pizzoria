@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Registro</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="../librerias/css/Registro.css">
+		<link rel="shortcut icon" href="../librerias/imagenes/4.png">
+		<script type="text/javascript">
+			function comprobarClave(){
+				var c=document.Regis.Contraseña.value;
+				var c2=document.Regis.ConfirmarContraseña.value;
+				if (c!=c2) {
+					alert("Las contraseñas no coinciden");
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1 id="h1">Registro</h1>
+		<aside>
+			<div id="L1">
+				<form method="POST" action="../php/Registrar.php" name="Regis">
+					<div>
+						<span id="C1"><input type="text" name="Nombre" id="C2" placeholder="Nombre" required></input></span>
+					</div><br>
+					<div>
+						<span id="C3"><input type="text" name="Apellido" id="C4" placeholder="Apellido" required></input></span>
+					</div><br>
+					<div>
+						<span><input type="text" name="Usuario" id="C5" placeholder="Usuario" required></input></span>
+					</div><br>
+					<div>
+						<span><input type="password" name="Contraseña" id="C6" placeholder="Contraseña" required></input></span>
+					</div><br>
+					<div>
+						<span><input type="password" name="ConfirmarContraseña" id="C7" placeholder="Confirmar Contraseña" required></input></span>
+					</div><br>
+					<div>
+						<span><input type="email" name="Correo" id="C8" placeholder="Correo" required></input></span>
+					</div><br>
+					<div>
+						<span><input type="number" name="Telefono" id="C9" placeholder="Telefono" required></input></span>
+					</div><br>
+					<div>
+						<span><input type="text" name="Dirección" id="C10" placeholder="Dirección" required></input></span>
+					</div><br>
+					<div>
+						<span><input type="submit" id="C11" value="Registrar" onclick="comprobarClave()"></input></span>
+					</div><br>
+				</form>
+			</div>
+			<div id="L2">
+				<span><a href="Login.html"><input type="submit" id="C12" value="Iniciar sesión"></input></a></span>
+			</div><br>
+		</aside>
+	</body>
+</html>

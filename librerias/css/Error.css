@@ -1,0 +1,13 @@
+body {
+	margin: 0px auto;
+	padding: 0px auto;
+	background-image: url(../imagenes/28.jpg);
+	background-size: 100% 100% 100%;
+}
+#h1 {
+	font-size: 60px;
+	color: white;
+	font-family: cursive;
+	text-align: center;
+	margin-top: 230px;
+}
